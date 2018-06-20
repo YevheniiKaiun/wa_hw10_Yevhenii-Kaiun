@@ -1,0 +1,54 @@
+.Traffic-light {
+  height: 300px;
+  width: 100px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.Light {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__Red {
+    border-radius: 50%;
+    flex-basis: 33.333%;
+    border: none;
+    margin: 15px;
+    outline: none;
+  }
+  &__Yellow {
+    border-radius: 50%;
+    flex-basis: 33.333%;
+    border: none;
+    margin: 15px;
+    outline: none;
+  }
+  &__Green {
+    border-radius: 50%;
+    flex-basis: 33.333%;
+    border: none;
+    margin: 15px;
+    outline: none;
+  }
+  &__focusRed {
+    .Light__Red {
+      background-color: red;
+    }
+  }
+
+  &__focusYellow {
+    .Light__Yellow {
+      background-color: yellow;
+    }
+  }
+
+  &__focusGreen {
+    .Light__Green {
+      background-color: green;
+    }
+  }
+}
+
+
+
