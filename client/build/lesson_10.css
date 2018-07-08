@@ -1,0 +1,39 @@
+.Traffic-light {
+  height: 300px;
+  width: 100px;
+  border: 1px solid black;
+  margin: 0 auto; }
+
+.Light {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 100%; }
+  .Light__Red {
+    border-radius: 50%;
+    -ms-flex-preferred-size: 33.333%;
+        flex-basis: 33.333%;
+    border: none;
+    margin: 15px;
+    outline: none; }
+  .Light__Yellow {
+    border-radius: 50%;
+    -ms-flex-preferred-size: 33.333%;
+        flex-basis: 33.333%;
+    border: none;
+    margin: 15px;
+    outline: none; }
+  .Light__Green {
+    border-radius: 50%;
+    -ms-flex-preferred-size: 33.333%;
+        flex-basis: 33.333%;
+    border: none;
+    margin: 15px;
+    outline: none; }
+  .Light__focusRed .Light__Red {
+    background-color: red; }
+  .Light__focusYellow .Light__Yellow {
+    background-color: yellow; }
+  .Light__focusGreen .Light__Green {
+    background-color: green; }
