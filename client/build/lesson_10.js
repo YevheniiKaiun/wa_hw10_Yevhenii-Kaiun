@@ -60,41 +60,41 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 330);
+/******/ 	return __webpack_require__(__webpack_require__.s = 342);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 330:
+/***/ 342:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(331);
+module.exports = __webpack_require__(343);
 
 
 /***/ }),
 
-/***/ 331:
+/***/ 343:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(332);
+__webpack_require__(344);
 
-var _Lights = __webpack_require__(333);
+var _Lights = __webpack_require__(345);
 
 (0, _Lights.TrafficLight)();
 
 /***/ }),
 
-/***/ 332:
+/***/ 344:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 333:
+/***/ 345:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

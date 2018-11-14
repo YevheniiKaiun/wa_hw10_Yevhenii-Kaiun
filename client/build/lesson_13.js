@@ -60,12 +60,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 338);
+/******/ 	return __webpack_require__(__webpack_require__.s = 350);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 125:
+/***/ 131:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -116,27 +116,27 @@ function Lamp(target) {
 
 /***/ }),
 
-/***/ 338:
+/***/ 350:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(339);
+module.exports = __webpack_require__(351);
 
 
 /***/ }),
 
-/***/ 339:
+/***/ 351:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-__webpack_require__(340);
+__webpack_require__(352);
 
-var _Lamp = __webpack_require__(125);
+var _Lamp = __webpack_require__(131);
 
-var _addlamp = __webpack_require__(341);
+var _addlamp = __webpack_require__(353);
 
-var _togglelamp = __webpack_require__(342);
+var _togglelamp = __webpack_require__(354);
 
 var target = document.querySelector('.Lamps-page');
 
@@ -148,14 +148,14 @@ for (var i = 0; i < 5; i++) {
 
 /***/ }),
 
-/***/ 340:
+/***/ 352:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 341:
+/***/ 353:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -166,7 +166,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.add_lamp = add_lamp;
 
-var _Lamp = __webpack_require__(125);
+var _Lamp = __webpack_require__(131);
 
 function add_lamp(target) {
     var btn = document.createElement('button');
@@ -181,7 +181,7 @@ function add_lamp(target) {
 
 /***/ }),
 
-/***/ 342:
+/***/ 354:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
