@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ajax} from "../../utils/ajax";
 import './lesson_15.scss';
-const URL = 'https://evening-dawn-11092.herokuapp.com/comments';
+const URL = 'http://localhost:4001/comments';
 
 export class Сomments extends React.Component {
     constructor() {
@@ -9,7 +9,7 @@ export class Сomments extends React.Component {
         this.state = {
             list: [],
             text: '',
-            name: '',
+            author: '',
         };
 
         ajax.get(URL, (resp) => {
@@ -18,7 +18,7 @@ export class Сomments extends React.Component {
         }
         addComment(comment) {
             this.setState({
-                name: '',
+                author: '',
                 text: '',
                 list: this.state.list.concat([comment])
             })
@@ -26,7 +26,7 @@ export class Сomments extends React.Component {
 
         submitForm(e) {
             e.preventDefault();
-            ajax.post(URL, {name: this.state.name, text: this.state.text}, (resp) => {
+            ajax.post(URL, {author: this.state.author, text: this.state.text}, (resp) => {
             this.addComment(resp);
             })
         }
@@ -35,7 +35,7 @@ export class Сomments extends React.Component {
         console.log(target.value);
             this.setState({
             list: this.state.list,
-            name: target.value
+            author: target.value
             });
         }
         inputHandlerText(e) {
@@ -52,7 +52,7 @@ export class Сomments extends React.Component {
 
         this.state.list.forEach((item) => {
             const li = <div className="Comments">
-                <div className="Comment__name">{item.name}</div>
+                <div className="Comment__author">{item.author}</div>
                 <div className="Comment__comment">{item.text}</div>
                 <span className="Comment__time">{item.date}</span>
             </div>;
@@ -62,7 +62,7 @@ export class Сomments extends React.Component {
         return <div className="wrapper">
             <div className="Input-Section">
                 <form className="Section" onSubmit={this.submitForm.bind(this)}>
-                    <input type="text" className="Section__name" onInput={this.inputHandlerName.bind(this)}/>
+                    <input type="text" className="Section__author" onInput={this.inputHandlerName.bind(this)}/>
                     <input type="text" className="Section__comments" onInput={this.inputHandlerText.bind(this)}/>
                     <button className="Section__Button">Add comments</button>
                 </form>
